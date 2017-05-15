@@ -1,0 +1,10 @@
+<h1>Let's Play</h1>
+<%= @grille %>
+<p> What's your best shot ? </p>
+
+<form action="score" method="get">
+  <input type="text" name="answer"><br>
+  <input type="hidden" name="grille" value="<%= @grille %>"><br>
+  <input type="hidden" name="start_time" value="<%= @start_time %>"><br>
+  <input type="submit" value="Go !">
+</form>
